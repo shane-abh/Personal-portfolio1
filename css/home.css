@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+
+    background: linear-gradient(45deg, #0F172A, #101A35 60%);
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    background-image: url('../images/space.jpg');
+    background-color: rgba(16,26,53,0.9);
+    background-blend-mode: darken;
+
+}
+
+
+
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+
+}
+
+.home-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin: 0.4em 10em;
+    gap: 4em;
+    height: 100vh;
+
+}
+
+
+
+
+
+.cta a {
+    padding: 1em;
+    font-size: large;
+    border-radius: 1em;
+    background-image: linear-gradient(45deg, #648CF6 50%, azure 50%);
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .8s ease;
+    width: 8em;
+    text-align: center;
+    background-color: azure;
+    text-decoration: none;
+    color: black;
+
+}
+
+.cta a:hover {
+    background-position: left top;
+
+    color: white;
+}
+
+
+
+
+
+
+section p {
+    max-width: 50vw;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+
+
+
+h1 {
+    font-size: 4rem;
+}
+
+.cta {
+    display: grid;
+    width: 40vw;
+
+    grid-template-columns: 1fr 1fr;
+    /* background-color: aqua; */
+    gap: 0.5em;
+    margin-top: 4em;
+}
+
+
+
+
+.hero_img {
+
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    padding-bottom: 1px;
+
+    /* background-color: aqua; */
+
+}
+
+img {
+    width: 40vw;
+    height: auto;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    main {
+        flex-direction: row;
+    }
+
+    .home-intro {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 1em;
+
+    }
+
+    section p {
+        max-width: 100vw;
+        margin-top: 2em;
+        padding: 1em;
+        text-align: center;
+        display: flex;
+        line-height: 3em;
+        justify-content: center;
+
+
+    }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0px;
+    }
+
+    .cta {
+        width: 100%;
+        gap: 0.2em;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2em;
+    }
+
+    .cta a {
+        width: 30vw;
+    }
+
+    .hero_img {
+        display: none;
+
+
+
+    }
+
+
+}
